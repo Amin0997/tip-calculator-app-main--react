@@ -1,0 +1,36 @@
+.calculator__container {
+    display: flex;
+
+    width: 920px;
+    height: 483px;
+
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.left__section {
+    padding: 47px;
+    padding-left: 48px;
+}
+
+@media (max-width: 920px) {
+    .calculator__container {
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+        height: 680px;
+    }
+
+    .left__section {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .calculator__container {
+        width: 320px;
+    }
+}

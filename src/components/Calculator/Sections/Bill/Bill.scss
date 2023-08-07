@@ -1,0 +1,68 @@
+.bill__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 7px;
+    width: 380px;
+}
+
+.bill__header {
+    font-size: 16px;
+    color: hsl(186, 14%, 43%);
+
+}
+
+.bill__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 47px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    background-color:hsl(189, 41%, 97%);
+    cursor: text;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.bill__label:focus-within {
+    border-color: hsl(172, 67%, 60%);
+}
+
+.bill__input {
+    background-color: inherit;
+    outline: none;
+    font-size: 26px;
+    text-align: right;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .bill__label {
+        height: 35px;
+    }
+
+    .bill__input {
+    height: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .bill__section {
+        width: 270px;
+    }
+
+    .bill__input {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .bill__header {
+        font-size: 14px;
+    }
+}

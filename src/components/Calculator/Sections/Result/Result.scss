@@ -1,0 +1,96 @@
+.right__section {
+    height: 416px;
+    width: 412px;
+    margin-top: 33px;
+    border-radius: 15px;
+    background-color: hsl(183, 100%, 15%);
+
+    display: flex;
+    padding: 45px 40px 0;
+    flex-direction: column;
+}
+
+.tip-amount {
+    margin-bottom: 30px;
+}
+
+.tip-amount, .total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-amount__result, .total__result {
+    display: flex;
+    align-items: center;
+}
+
+.right__section-header {
+    font-size: 16px;
+    color: hsl(185, 41%, 84%);
+
+    span {
+        color: hsl(184, 14%, 56%);
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}
+
+.result-output {
+    color: hsl(172, 67%, 45%);
+    font-size: 45px;
+    margin-left: -14px;
+}
+
+.dollar_icon {
+    height: 40px;
+    width: 40px;
+}
+
+.reset-btn {
+    height: 50px;
+    font-size: 20px;
+    margin-top: 118px;
+    border-radius: 10px;
+    background-color: hsl(183, 79%, 32%);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+        transform: scale(1.03);
+        background-color: hsl(172, 80%, 65%);
+        color:hsl(183, 100%, 15%);
+    }
+
+    &:active {
+        transform: scale(0.99);
+        background-color: hsl(172, 70%, 55%);
+    }
+}
+
+@media (max-width: 920px) {
+    .right__section {
+        margin: 0;
+        padding: 25px 25px 0;
+        height: 250px;
+        width: 370px;
+    }
+
+    .result-output {
+        font-size: 25px;
+    }
+
+    .reset-btn {
+        height: 35px;
+        font-size: 16px;
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 450px) {
+    .right__section {
+        width: 270px;
+    }
+}

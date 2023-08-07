@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+body {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 87px;
+    font-family: 'Space Mono', monospace;
+    font-style: 24px;
+}
+
+input {
+    border: none;
+}
+
+@media (max-width: 920px) {
+    .wrapper {
+        row-gap: 30px;
+    }
+}
